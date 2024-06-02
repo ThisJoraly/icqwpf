@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:icqwpf"
         mc:Ignorable="d"
-        Title="ChatWindow" Height="450" Width="800">
+        Title="ICQ МЯУ" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="MessagesListBox" Grid.Column="0"/>
+        <TextBox x:Name="MessageTextBox" Grid.Row="1"/>
+        <ListBox x:Name="ClientListBox" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="ExitButton" Content="Выход" Grid.Row="2" FontSize="12" Grid.Column="1" Click="ExitButton_Click" Foreground="DarkOliveGreen" Background="LightGreen"/>
+        <Button x:Name="SendMessageButton" Content="Отправить" FontSize="12" Grid.Column="2" Grid.Row="1" Foreground="DarkOliveGreen" Background="LightGreen" Click="SendMessageButton_Click"/>
     </Grid>
 </Window>

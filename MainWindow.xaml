@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:icqwpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ICQ Login" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
 
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ICQ - возрождение" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Grid.Row="0" Foreground="DarkOliveGreen" FontWeight="Bold"/>
+        <TextBox x:Name="UsernameBox" Grid.Row="1" Margin="15"/>
+        <Button x:Name="NewChatButton" Grid.Row="2" Content="Создать чат" Margin="15" Click="NewChatButton_Click" Foreground="DarkOliveGreen" Background="LightGreen"/>
+        <Button x:Name="LoginButton" Grid.Row="3" Content="Подключиться к существующему чату" Margin="15" Click="LoginButton_Click" Foreground="DarkOliveGreen" Background="LightGreen"/>
+        <TextBox x:Name="IPBox" Grid.Row="4" Margin="15" VerticalAlignment="Center"/>
     </Grid>
 </Window>

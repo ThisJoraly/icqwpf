@@ -23,5 +23,15 @@ namespace icqwpf
         {
             InitializeComponent();
         }
+
+        private void SendMessageButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
