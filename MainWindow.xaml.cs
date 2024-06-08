@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,7 +28,8 @@ namespace icqwpf
 
         private void NewChatButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var client = new TcpClient();
+            client.Connect(IPBox.Text, 7856);
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
